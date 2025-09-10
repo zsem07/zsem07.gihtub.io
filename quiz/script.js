@@ -26,6 +26,14 @@ const quizData = [
             "Zsigmond"
         ],
         "correctAnswer": "Zsigmond"
+    },
+    {
+        "question": "Reszponzív-e az oldal?",
+        "answers": [
+            "Igen",
+            "Nem"
+        ],
+        "correctAnswer": "Igen"
     }
 ];
 

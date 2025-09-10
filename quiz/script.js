@@ -45,9 +45,9 @@ quizData.forEach((question, index) => {
     questionElement.innerHTML = `
         <h2>${question.question}</h2>
         ${question.answers.map(answer => (
-            `<input type="radio" name="${question.question}_answers" value="${answer}">
+        `<input type="radio" name="${question.question}_answers" value="${answer}">
             <label for="${question.question}_answers">${answer}</label><br>`
-        )).join('')}
+    )).join('')}
         ${index !== quizData.length - 1 ? '<hr>' : ''}
     `;
     questionContainer.insertBefore(questionElement, questionContainer.children[questionContainer.children.length - 1]);
@@ -69,5 +69,5 @@ function rate() {
 
     document.getElementById("rating").style.display = "block";
     document.getElementById("question_container").style.display = "none";
-    
+
 }

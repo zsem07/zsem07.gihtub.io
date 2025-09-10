@@ -40,10 +40,10 @@ const quizData = [
         "question": "Milyen kép van a főoldal tetején?",
         "answers": [
             "Több egyéni kép.",
-            "Egy Csoport kép",
+            "Egy csoport kép.",
             "Nincs semilyen kép a főoldal tetején."
         ],
-        "correctAnswer": "Igen"
+        "correctAnswer": "Egy csoport kép."
     }
 ];
 

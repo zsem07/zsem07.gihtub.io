@@ -1,0 +1,163 @@
+#image {
+    float: left;
+}
+
+img {
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(8, 54, 53));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#info {
+    float: right;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 75px;
+    text-align: center;
+    margin-right: 400px;
+}
+
+.collapsible {
+    color: #043b49;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+
+.content {
+
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#button1 {
+    margin-left: 100px;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+    width: 95px;
+    max-height: 100px;
+}
+
+#button2 {
+    margin-left: 100px;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+    width: 130px;
+    max-height: 100px;
+}
+
+#buttons {
+    display: grid;
+    margin-top: auto;
+    padding: 10px;
+    margin-bottom: 150px;
+    font-size: 24px;
+}
+
+#hobbies {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    float: left;
+}
+
+#activities {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    float: right;
+}
+
+@media (max-width: 1360px) {
+
+
+    div {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #hobbies {
+        float: none;
+        margin-left: 40px;
+        margin-right: 150px;
+    }
+
+    #activities {
+        float: none;
+        margin-left: 40px;
+        margin-right: 150px;
+    }
+
+    #image {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #info {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    #hobbies {
+        font-size: 16px;
+    }
+
+    #activities {
+        font-size: 16px;
+
+    }
+
+    #info {
+        font-size: 20px;
+
+    }
+    img {
+    width: 200px;
+    }
+
+}
+@media (max-width: 800px) {
+
+    #hobbies {
+        font-size: 14px;
+    }
+
+    #activities {
+        font-size: 14px;
+
+    }
+
+    #info {
+        font-size: 16px;
+
+    }
+}

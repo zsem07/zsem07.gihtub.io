@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zsigmond.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Kósi Zsigmond</title>
+</head>
+
+<body>
+    <nav>
+        <a href="../botond/botond.html">&#129168;&#129168; Botond</a>
+        <div>
+            <a href="../index.html">Fő oldal</a>
+            <a href="../quiz/index.html">Kérdőív</a>
+        </div>
+        <a href="../cisco/cisco.html">Francisco &#129170;&#129170;</a>
+    </nav>
+    <main>
+        <div id="info">
+            <img src="./kosi_zsigmond_pixelated.png" alt="portré Kósi Zsigmond" id="portrait">
+            <div>
+                <h2 data-text="Kósi Zsigmond"></h2>
+                <p data-text="A VSZC Boronkay György Műszaki Technikum és Gimnázium diákja"></p>
+                <p data-text="Osztály: 11P"></p>
+                <p data-text="Születési dátum: 2007-12-03"></p>
+                <p data-text="Lakhely: Borsosberény 2644"></p>
+            </div>
+        </div>
+        <div>
+            <button data-text="Hobbik" onclick="toggle(event, 'togglable-01')"></button>
+            <ul id="togglable-01" class="togglable">
+                <li data-text="animék/animációk"></li>
+                <li data-text="cosplay"></li>
+                <li data-text="dungeonds and dragons"></li>
+                <li data-text="wing tsun"></li>
+                <li data-text="még említésre méló: videójátékok"></li>
+            </ul>
+        </div>
+        <div>
+            <button data-text="Erősségek" onclick="toggle(event, 'togglable-02')"></button>
+            <ul id="togglable-02" class="togglable">
+                <li data-text="jó memória"></li>
+                <li data-text="erős logikai késség"></li>
+                <li data-text="nagy munkamorál"></li>
+                <li data-text="sok éves programozás tapasztalat"></li>
+            </ul>
+        </div>
+    </main>
+    <audio src="./typing.wav" id="typingSound"></audio>
+    <audio src="./delete.wav" id="deleteSound"></audio>
+    <script src="./script.js"></script>
+</body>
+
+
+</html>

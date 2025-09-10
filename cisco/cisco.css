@@ -1,0 +1,303 @@
+body{
+    font-family: Comic Sans MS;
+    font-size:135%;
+    color: white;
+    padding:0;
+    margin: 0;
+    background: #2d2398;
+    background: linear-gradient(0deg, rgb(69, 42, 158) 22%, rgb(0, 0, 0) 92%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+.main{
+  margin-top: 20px;
+  border: white solid 2px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  height: 80%;
+}
+
+.main_cont{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  column-gap: 10%;
+}
+
+
+.cont{
+  align-items: center;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.cont img{
+  border: 2px solid white;
+  width: 400px;
+}
+
+.cont .helper{
+  font-size: 150%;
+  text-align: center;
+  width:300px;
+}
+
+.cont2{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont2 h1{
+  font-size: 200%;
+  width: 100%;
+  text-align: center;
+  border: solid rgb(42, 42, 54) 2px;
+  border-radius: 50px;
+  background-color: rgb(42, 42, 54);
+  transition-duration: .1s;
+}
+
+.cont2 h1:hover{
+  cursor: default;
+  transition: ease-in-out;
+  transition-duration: .1s;
+  background-color: rgb(69, 69, 88);
+  border-color: rgb(69, 69, 88);
+  font-size: 230%;
+}
+
+.cont2 a{
+  text-decoration: none;
+  color: white;
+}
+
+.cont2 #text{
+  font-size: 150%;
+  width: fit-content;
+  padding: 10px;
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+  transition-duration: .1s;
+}
+
+.cont2 #words{
+  animation-name: text;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+
+} 
+
+/* second content block */
+
+
+.main2{
+  display: flex;
+  flex-direction: row;
+  row-gap: 20%;
+  column-gap: 10%;
+}
+
+.side h2{
+  font-size: 150%;
+  width: 60%;
+  text-align: center;
+  border: solid rgb(42, 42, 54) 2px;
+  border-radius: 50px;
+  background-color: rgb(42, 42, 54);
+  transition-duration: .1s;
+}
+
+.side h2:hover{
+  cursor: default;
+  transition: ease-in-out;
+  transition-duration: .1s;
+  background-color: rgb(69, 69, 88);
+  border-color: rgb(69, 69, 88);
+  font-size: 180%;
+}
+
+
+.side{
+  margin-left: 60px;
+  width: 40%;
+}
+
+
+.side #text2{
+  font-size: 150%;
+  width: fit-content;
+  padding: 10px;
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+  transition-duration: .1s;
+}
+
+.side #words2{
+
+  animation-name: text;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.side #text3{
+  font-size: 150%;
+  width: fit-content;
+  padding: 10px;
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+  transition-duration: .1s;
+}
+
+.side #words3{
+  animation-name: text;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+
+}
+
+/*anim player*/
+
+@keyframes anim{
+    0%{
+      visibility: hidden;
+      border: none;
+      width: 0;
+      height: 350px;
+      background-color: rgb(128, 128, 128, 0%);
+    }
+
+    100%{
+      visibility: visible;
+      border: solid 2px white;
+      border-radius: 50px;
+      width: 100%;
+      height: 350px;
+      background-color: rgb(128, 128, 128, 20%);
+       box-shadow: 5px 5px 5px rgb(255, 255, 255), 10px 10px 10px rgb(0, 0, 0);
+    }
+
+  }
+
+@keyframes text{
+  0%{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100%{
+    opacity: 100%;
+    visibility: visible;
+  }
+}
+
+/* media queries */
+
+@media(max-width: 1500px){
+  body{
+    overflow: scroll;
+  }
+
+  .side{
+    margin-left: 40px;
+  }
+}
+
+@media(max-width: 1073px){
+  .side{
+    margin-left: 35px;
+  }
+}
+
+@media(max-width: 992px){
+  body{
+    font-size: 100%;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main_cont{
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+    align-items: center;
+  }
+
+  .main2{
+    flex-direction: column;
+    align-items: center;
+    column-gap: 50px;
+    width: 60%;
+  }
+
+  .cont2{
+    width: 80%;
+    font-size: 130%;
+  }
+
+  .cont2 #text{
+    font-size: 130%;
+  }
+
+  .side{
+    margin-left: 0;
+    font-size: 130%;
+  }
+
+  .side h2{
+    font-size: 120%;
+  }
+
+  .side h2:hover{
+    font-size: 140%;
+  }
+
+  .side #text2{
+    font-size: 140%;
+  }
+
+  .cont{
+      margin-left: 0;
+  }
+
+}
+
+@media (max-width: 581px){
+  nav a{
+    font-size: 130%;
+  }
+
+  .cont2, .side{
+    font-size: 100%;
+  }
+}

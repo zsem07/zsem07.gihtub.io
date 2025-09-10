@@ -1,0 +1,77 @@
+#mainImg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+#mainImg img {
+    display: block;
+    margin: auto;
+    height: 500px;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 40%;
+    margin: auto;
+}
+
+.introduction {
+    border: 2px black solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+
+.introduction img {
+    height: 100%;
+}
+
+nav {
+    background-color: black;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+nav>a:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+nav div a:hover {
+    color: #cccc;
+    transition: transform 0.2s ease-in-out;
+}
+
+nav div {
+    white-space: nowrap;
+    padding: 0% 1%;
+}
+
+nav div a {
+    margin: 1% 1%;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
+
+}

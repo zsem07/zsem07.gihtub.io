@@ -6,6 +6,8 @@ img {
     width: 400px;
     margin-left: 40px;
     margin-top: 40px;
+    border-radius: 5px;
+    border: white solid 2px;
 }
 
 body {
@@ -28,7 +30,7 @@ body {
 }
 
 .collapsible {
-    color: #043b49;
+    color: #0a6981;
     padding: 18px;
     width: 100%;
     border: none;
